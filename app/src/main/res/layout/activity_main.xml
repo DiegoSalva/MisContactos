@@ -5,10 +5,24 @@
     android:layout_height="match_parent"
     tools:context="com.example.diegosalva.miscontactos.MainActivity">
 
-    <ListView
+    <include android:id="@+id/miActionbar"
+        layout="@layout/actionbar"></include>
+
+    <!--<ListView
     android:id="@+id/lvContactos"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    </ListView>
+    </ListView> -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContactos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/miActionbar"
+        />
+
+
+
+
 </RelativeLayout>

@@ -73,16 +73,14 @@
     >
 
     <ImageView
+        android:id="@+id/ivFoto"
         android:layout_marginTop="@dimen/top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
         android:src="@drawable/logosalva"
-        android:onClick="fCall"
+
         />
-    <EditText
-        android:id="@+id/etMarcar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
 
 </LinearLayout>
 

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -18,6 +19,7 @@ public class DetalleContacto extends AppCompatActivity {
     private TextView tvNombre;
     private TextView tvTelefono;
     private TextView tvEmail;
+    private ImageView ivFoto;
 
     private EditText etMarcar;
 
@@ -31,15 +33,16 @@ public class DetalleContacto extends AppCompatActivity {
         String telefono = parametros.getString(getResources().getString(R.string.ptelefono));//telefono
         String email = parametros.getString(getResources().getString(R.string.pemail));//email
 
+
         tvNombre = (TextView) findViewById(R.id.tvNombre);
         tvTelefono = (TextView) findViewById(R.id.tvTelefono);
         tvEmail = (TextView) findViewById(R.id.tvEmail);
-
-        etMarcar = (EditText) findViewById(R.id.etMarcar);
+        ivFoto = (ImageView) findViewById(R.id.ivFoto);
 
         tvNombre.setText(nombre);
         tvTelefono.setText(telefono);
         tvEmail.setText(email);
+
     }
 
     public void llamar(View view) {
